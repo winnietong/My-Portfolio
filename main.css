@@ -103,8 +103,10 @@ li {
 .about {
   display: inline-block;
   width: 33%;
+  height: 140px;
   margin-top: 20px;
-  text-align: left; }
+  text-align: left; 
+  vertical-align: top;}
 
 /* Connect */
 .connect a {
