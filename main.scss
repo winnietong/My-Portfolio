@@ -1,18 +1,24 @@
 // Sass Variables
 $font-stack: "proxima-nova", sans-serif;
-$font-headings: "freight-big-pro", sans-serif;
+$font-headings:  "wayfinding-sans-condensed",sans-serif;
+$darkest-grey: #444444; //h3
 $dark-grey: #6f6f6f; //headers, etc..
 $grey: #a3a3a3;
 $light-grey: #eaeaea;
 $white: #fbfbfb;
 $body-color: #292929;
+$gold: #e2aa33;
+
+.white{
+	color: $white;
+}
 
 // Start CSS
 body {
 	font-family: $font-stack;
 	font-size: 16px;
 	font-weight: 300;
-	color: $grey;
+	color: $dark-grey;
 	height: 100%;
 	margin: auto;
 	text-align: center;
@@ -25,6 +31,7 @@ body {
 	display: block;
 }
 
+
 /* Navigation */
 header{
 	position: fixed;
@@ -33,13 +40,15 @@ header{
 	padding-bottom: 20px;
 	background-color: $white;
 	opacity: 0.95;
-	border-bottom: 1px solid $light-grey;
+	box-shadow: 0 1px 1px 0 $light-grey;
 }
 
 #logo-text{
 	font-size: 32px;
-	color: $dark-grey;
-	font-family: $font-headings;
+	color: $darkest-grey;
+	font-family: $font-stack;
+	font-style: normal;
+	text-transform: uppercase;
 	display: inline;
 	float: left;
 }
@@ -58,7 +67,7 @@ li{
 
 #hero-unit{
 	background: url("img/color-splash.jpg") no-repeat;
-	min-height: 600px;
+	min-height: 550px;
 	margin: 0 auto;
 	background-attachment: fixed;
 }
@@ -87,6 +96,24 @@ li{
 	display: inline;
 	padding: 0 0 0 20px;
 }
+/* About Me */
+#contact{
+	padding-top: 50px;
+}
+
+.about-text{
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+
+.project-icon{
+	height: 100px;
+}
+
+p img{
+	height: 80px;
+}
+
 
 /* LATEST PROJECTS */
 
@@ -97,13 +124,14 @@ li{
 #projects{
 	margin-left: -10px;
 	margin: auto;
+	padding-top: 50px;
 }
 .project{
 	display: inline-block;
 	width: 33%;
 	height: 360px;
 	margin: 0 auto;
-	text-align: left;
+	// text-align: left;
 }
 
 .project img{
@@ -117,7 +145,15 @@ li{
 	width: 300px;
 }
 
+.project-container{
+	padding: 40px 0 10px 0;
+}
+
 /* Technology */
+.tech-text{
+	font-size: 22px;
+	line-height: 1em;
+}
 
 #tech-unit{
 	background: url("img/galaxy.jpg") no-repeat;
@@ -127,14 +163,15 @@ li{
 
 #tech-blurb{
 	color: $white;
-	padding: 50px 0;
+	padding: 80px 0;
 }
 
 .about{
 	display: inline-block;
 	width: 33%;
-	margin-top: 20px;
-	text-align: left;
+	margin-bottom: 40px;
+	// text-align: left;
+	vertical-align: top;
 }
 
 /* Connect */
@@ -157,14 +194,18 @@ h1{
 }
 
 h2{
-	font-size: 40px;
+	font-size: 28px;
 	font-family: $font-headings;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: $darkest-grey;
 }
 
+
 h3{
-	font-size: 22px;
-	padding: 5px 0;
+	font-size: 26px;
+	color: $darkest-grey;
+	margin: 10px 0;
 }
 
 h4{
@@ -173,6 +214,7 @@ h4{
 
 p{
 	font-size: 14px;
+	line-height: 1.5em;
 }
 
 a{
@@ -188,6 +230,7 @@ footer{
 	background-color: #353535;
 	max-width: 100%;
 	padding: 40px 0;
+	border: 5px solid $grey;
 }
 
 footer h4{

@@ -1,8 +1,11 @@
+.white {
+  color: #fbfbfb; }
+
 body {
   font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #a3a3a3;
+  color: #6f6f6f;
   height: 100%;
   margin: auto;
   text-align: center;
@@ -21,12 +24,14 @@ header {
   padding-bottom: 20px;
   background-color: #fbfbfb;
   opacity: 0.95;
-  border-bottom: 1px solid #eaeaea; }
+  box-shadow: 0 1px 1px 0 #eaeaea; }
 
 #logo-text {
   font-size: 32px;
-  color: #6f6f6f;
-  font-family: "freight-big-pro", sans-serif;
+  color: #444444;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
   display: inline;
   float: left; }
 
@@ -42,7 +47,7 @@ li {
 /* HERO */
 #hero-unit {
   background: url("img/color-splash.jpg") no-repeat;
-  min-height: 600px;
+  min-height: 550px;
   margin: 0 auto;
   background-attachment: fixed; }
 
@@ -66,20 +71,34 @@ li {
   display: inline;
   padding: 0 0 0 20px; }
 
+/* About Me */
+#contact {
+  padding-top: 50px; }
+
+.about-text {
+  font-size: 22px;
+  margin-bottom: 50px; }
+
+.project-icon {
+  height: 100px; }
+
+p img {
+  height: 80px; }
+
 /* LATEST PROJECTS */
 .light-unit {
   padding: 20px 0; }
 
 #projects {
   margin-left: -10px;
-  margin: auto; }
+  margin: auto;
+  padding-top: 50px; }
 
 .project {
   display: inline-block;
   width: 33%;
   height: 360px;
-  margin: 0 auto;
-  text-align: left; }
+  margin: 0 auto; }
 
 .project img {
   width: 300px;
@@ -90,7 +109,14 @@ li {
   margin: 1px;
   width: 300px; }
 
+.project-container {
+  padding: 40px 0 10px 0; }
+
 /* Technology */
+.tech-text {
+  font-size: 22px;
+  line-height: 1em; }
+
 #tech-unit {
   background: url("img/galaxy.jpg") no-repeat;
   min-height: 200px;
@@ -98,15 +124,20 @@ li {
 
 #tech-blurb {
   color: #fbfbfb;
-  padding: 50px 0; }
+  padding: 80px 0; }
 
 .about {
   display: inline-block;
   width: 33%;
+<<<<<<< HEAD
+  margin-bottom: 40px;
+  vertical-align: top; }
+=======
   height: 140px;
   margin-top: 20px;
   text-align: left; 
   vertical-align: top;}
+>>>>>>> gh-pages
 
 /* Connect */
 .connect a {
@@ -124,19 +155,23 @@ h1 {
   font-size: 80px; }
 
 h2 {
-  font-size: 40px;
-  font-family: "freight-big-pro", sans-serif;
-  padding-bottom: 20px; }
+  font-size: 28px;
+  font-family: "wayfinding-sans-condensed", sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #444444; }
 
 h3 {
-  font-size: 22px;
-  padding: 5px 0; }
+  font-size: 26px;
+  color: #444444;
+  margin: 10px 0; }
 
 h4 {
   font-size: 14px; }
 
 p {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 1.5em; }
 
 a {
   text-decoration: none;
@@ -147,7 +182,8 @@ a {
 footer {
   background-color: #353535;
   max-width: 100%;
-  padding: 40px 0; }
+  padding: 40px 0;
+  border: 5px solid #a3a3a3; }
 
 footer h4 {
   font-weight: 600;
