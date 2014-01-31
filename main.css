@@ -129,8 +129,15 @@ p img {
 .about {
   display: inline-block;
   width: 33%;
+<<<<<<< HEAD
   margin-bottom: 40px;
   vertical-align: top; }
+=======
+  height: 140px;
+  margin-top: 20px;
+  text-align: left; 
+  vertical-align: top;}
+>>>>>>> gh-pages
 
 /* Connect */
 .connect a {
